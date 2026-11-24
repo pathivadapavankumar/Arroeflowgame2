@@ -1,0 +1,17 @@
+[2026-11-24T03:52:20.627Z] {"timestamp":1795492340178,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-11-24T03:52:56.942Z] {"timestamp":1795492352648,"level":"LOG","args":["Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org"],"stack":null}
+[2026-11-24T03:52:56.942Z] {"timestamp":1795492356163,"level":"LOG","args":["OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL"],"stack":null}
+[2026-11-24T03:52:56.942Z] {"timestamp":1795492357357,"level":"LOG","args":["Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support."],"stack":null}
+[2026-11-24T03:52:57.607Z] {"timestamp":1795492372363,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-11-24T03:52:57.607Z] {"timestamp":1795492372773,"level":"LOG","args":["Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org"],"stack":null}
+[2026-11-24T03:52:57.607Z] {"timestamp":1795492373398,"level":"LOG","args":["OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL"],"stack":null}
+[2026-11-24T03:52:57.607Z] {"timestamp":1795492373993,"level":"LOG","args":["Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support."],"stack":null}
+[2026-11-24T03:58:10.620Z] {"timestamp":1795492690172,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-11-24T03:58:13.853Z] {"timestamp":1795492688885,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-11-24T03:58:13.853Z] {"timestamp":1795492689673,"level":"LOG","args":["Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org"],"stack":null}
+[2026-11-24T03:58:13.853Z] {"timestamp":1795492689990,"level":"LOG","args":["OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL"],"stack":null}
+[2026-11-24T03:58:13.853Z] {"timestamp":1795492690360,"level":"LOG","args":["Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support."],"stack":null}
+[2026-11-24T03:58:17.987Z] {"timestamp":1795492694151,"level":"DEBUG","args":["[Manus] Debug collector initialized (no rrweb, UI events only)"],"stack":null}
+[2026-11-24T03:58:17.987Z] {"timestamp":1795492694626,"level":"LOG","args":["Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org"],"stack":null}
+[2026-11-24T03:58:17.987Z] {"timestamp":1795492694818,"level":"LOG","args":["OpenGL API OpenGL ES 3.0 (WebGL 2.0 (OpenGL ES 3.0 Chromium)) - Compatibility - Using Device: WebKit - WebKit WebGL"],"stack":null}
+[2026-11-24T03:58:17.987Z] {"timestamp":1795492694917,"level":"LOG","args":["Build configuration: Emscripten 4.0.20, single-threaded, no GDExtension support."],"stack":null}

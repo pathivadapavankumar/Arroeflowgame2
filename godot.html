@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+		<meta name="theme-color" content="#f6f5ef">
+		<meta name="description" content="Arrowflow — clear a path, find your flow. A bright arrow-path puzzle game.">
+		<meta name="manus-game-loading-screen" content="1">
+		<link rel="icon" type="image/png" href="data:image/png;base64,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">
+		<title>Arrowflow</title>
+		<style>
+:root {
+	color-scheme: light;
+	--paper: #f6f5ef;
+	--ink: #172b3a;
+	--muted: #687783;
+	--lime: #c8ef68;
+	--coral: #f17961;
+	--line: #dce3df;
+}
+* { box-sizing: border-box; }
+html, body, #canvas { width: 100%; height: 100%; margin: 0; padding: 0; border: 0; }
+html, body { overflow: hidden; background: var(--paper); }
+body { color: var(--ink); font-family: "Nunito", "Avenir Next", system-ui, sans-serif; }
+#canvas { position: absolute; inset: 0; display: block; outline: none; touch-action: none; }
+#canvas:focus { outline: none; }
+#status {
+	position: fixed;
+	z-index: 5;
+	inset: 0;
+	display: grid;
+	place-items: center;
+	padding: max(22px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(22px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+	background: var(--paper);
+	text-align: center;
+}
+.loader-card { width: min(100%, 430px); padding: clamp(26px, 6vw, 44px); border: 1px solid rgba(23,43,58,.08); border-radius: 30px; background: rgba(255,255,255,.68); box-shadow: 0 22px 70px rgba(23,43,58,.08); }
+#game-icon { width: 74px; height: 74px; display: block; margin: 0 auto 19px; border-radius: 20px; box-shadow: 0 8px 22px rgba(23,43,58,.12); }
+h1 { margin: 0; color: var(--ink); font-size: clamp(28px, 8vw, 40px); line-height: 1; font-weight: 900; letter-spacing: .055em; }
+#tagline { margin: 12px 0 24px; color: var(--muted); font-size: 15px; line-height: 1.5; }
+#status-progress { display: block; width: min(100%, 280px); height: 12px; margin: 0 auto; overflow: hidden; border: 0; border-radius: 99px; background: #e7ece6; appearance: none; }
+#status-progress::-webkit-progress-bar { border-radius: 99px; background: #e7ece6; }
+#status-progress::-webkit-progress-value { border-radius: 99px; background: var(--lime); transition: width .18s ease-out; }
+#status-progress::-moz-progress-bar { border-radius: 99px; background: var(--lime); }
+#status-label { min-height: 22px; margin: 12px 0 0; color: var(--ink); font-size: 13px; font-weight: 800; }
+#status-tip { margin: 8px 0 0; color: var(--muted); font-size: 12px; line-height: 1.45; }
+#slow-notice { margin: 14px 0 0; color: var(--muted); font-size: 12px; }
+#status-notice { display: none; margin: 18px 0 0; padding: 12px 14px; border: 1px solid #f1b7aa; border-radius: 14px; background: #fff0eb; color: #8c3d31; font-size: 13px; line-height: 1.45; overflow-wrap: anywhere; }
+#retry { display: none; min-height: 46px; margin: 18px auto 0; padding: 0 24px; border: 0; border-radius: 99px; background: var(--ink); color: white; font: inherit; font-weight: 800; cursor: pointer; }
+#retry:focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
+#status.error #status-progress, #status.error #status-label, #status.error #status-tip, #status.error #slow-notice { display: none; }
+#status.error #status-notice, #status.error #retry { display: block; }
+noscript { position: fixed; z-index: 8; inset: 0; display: grid; place-items: center; padding: 24px; background: var(--paper); color: var(--ink); text-align: center; }
+@media (max-width: 420px) { .loader-card { border-radius: 24px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }
+		</style>
+		$GODOT_HEAD_INCLUDE
+		<style id="arrowflow-shell-overrides">
+			html, body { background: #f6f5ef !important; color: #172b3a !important; }
+			html body #status { background: #f6f5ef !important; color: #172b3a !important; font-family: "Nunito", "Avenir Next", system-ui, sans-serif !important; }
+			html body #mushies-loader { display: none !important; }
+			html body #status #status-splash { display: none !important; }
+			html body #status #status-progress { display: block !important; width: min(100%, 280px) !important; height: 12px !important; margin: 0 auto !important; border: 0 !important; border-radius: 99px !important; background: #e7ece6 !important; appearance: none !important; }
+			html body #status #status-progress::-webkit-progress-bar { border-radius: 99px; background: #e7ece6; }
+			html body #status #status-progress::-webkit-progress-value { border-radius: 99px; background: #c8ef68; transition: width .18s ease-out; }
+			html body #status #status-progress::-moz-progress-bar { border-radius: 99px; background: #c8ef68; }
+			html body #status.error #status-progress, html body #status.error #status-label, html body #status.error #status-tip, html body #status.error #slow-notice { display: none !important; }
+			html body #status.error #status-notice { display: block !important; }
+			html body #status.error #retry { display: inline-block !important; }
+			#retry { min-height: 46px; padding: 0 24px; border: 0; border-radius: 99px; background: #172b3a; color: #fff; font: inherit; font-weight: 800; cursor: pointer; }
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" aria-label="Arrowflow game canvas">Your browser does not support the canvas tag.</canvas>
+		<noscript>Arrowflow needs JavaScript enabled to run.</noscript>
+		<div id="status" role="status" aria-live="polite">
+			<div class="loader-card">
+				<img id="game-icon" src="data:image/png;base64,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" alt="">
+				<img id="status-splash" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAHeElEQVR42u3dQW4rRRRG4XQpe8gYIcEgEguI2AKwiMeyeIsAtoCygCdlABJinFWEKUE8Ybftrnvr/84Y6XV1fE7dtgv77g4AAAAAAAAAAAAAAAAAAPRlS1z0w+PTmz89/ovXl+dNAIgORIRhIz2QG4ON9EBuDDbSA7kx2IgP5IZgIz6QG4KN+EBuCDbiA7khGOQHcl/XmxsE5E4Dg/xA7ut9uBlA7ut+Iz6Q+0gwyA/kTgOD/EBuBAb5gdwIDPIDuREY5AdyIzDID+RGYJAfyI3AID+QG4Hh9gK53CwAdn+gvk+D/EBuBAb5gdwIeA8A8B6A3R9InAIG+YHcCHgEADwC2P2BxCnABAAEc/HXEHXc/X/+7Zty1/TDt5/iXnx/fP91uWv66pff293HS75OLCYAFaVPjEFF6bvHYFoAOsjfSfyVQ9BJ/I4h2BuBZQPQWfyVQtBZ/E4h2BuAQX6PL+Tvv569Pi73KcBq8ndd12ryr7quQRLrI0nu+nYFoOL4v7r8Xda5uvyV17nHy0EK6yV/7noHGfYz8935ahFIk3+VdZ8dAOf+38ufeIIPdTnXz9YTwKxd8N/Sz4pAlSlg5i5Y4bP5zlOA/xnoSmO/SSBT/qj3ACqN/zN2v/+TfEYEZk8Bs3a/avJXmgLO8dQEcCX5TQJ2fo8A4fKLAPkFYLGxd6/MR0Zg1mPA0WNvdfk7vhloArihxCYBO78AhMovAuRfKgBJB4CuLa0IkP9oTvXVBHCQrCJAfo8AAPkFIG33NwWQXwDC5ReB08QnvwAsK78I2PWrcU/+T9P+3bQvMrmV/LeIR8r3Gwzy5/77dn4M8rsO8gsA+V0P+QWA/K6L/AJAftdHfgEgv+skvwCQ3/WSXwDI77rJvxrLHwTae9jmmgImH/ghvwkAwaT+YpAAACIgAIAICAAgAgIAERABAYAIQAAgAhAAiAAEACKAo7l3C1AhApecGBQREwBMAhAAdI+AEAgAhMBNEACIAAQAIgABgAhAACACEACIAGID4Ce1atyPo7/uq3oEOn79mQkAJoFgHAX+DH65t3YEfNlo+ATgMaDGfZglYrVJoGuQPALA44AJwO5n/T13vwoR6Pw4YgIATAB2QevO3QWT1z3IYL1kyF3vIIV1kiJ3nYMc1keO3PUNklgXSXLXNchiPWTJjdp26n/48Pj01nGBnY/0rhSyzod2uor/+vK8xQegYwhWfi+jUwi67/gC0CgGiecZKsZgpTFfAIBgTgmAo8BAMAIACAAAAQAgAAAEAIAAABAAAAIAQAAACAAAAQAgAAAEAIAAABAAAAIAQAAACAAAAQAgAAAEAIAAABAAAAIAQAAACAAAAQBwFe4TF/3dTx/LXdOvP36I+zv8+fGLctf05Ye/ov4GMb8OXFH6xBhUlH7VGPh58GbirxyCTuKvEoLoAHQWf6UQdBa/ewhOCcCSbwKuJH/n9awk/4rrWTIAq8nfdV0ryrLiugZJrI8kuesb5LBOcuSuc5DCekmRu95BBusmQ+66HQUGgmkdgAq74MzP6KtMAam7/wrrNwE0jwAQGYBqz8CzIjD7PqTv/t3vw70/3XUjkPqm5K245vFbsfII4HEA6B6A6rvs0RGYdT/sqP3vhwnAJAATAEQAAgARgABABCAAEAEIAEQAAoCrRUAIIABC4CZgOvekm3s9jg7DBGASAARABAABEAFAAEQAEAARAARABAABEAFAAEQAEAARAC7Cl4IWZ5WTgtf8cs+jr2Hlrz4zAZD/ELpKtPr3HgoA+ckUKr8AkJ9UwfILAPnJFSy/AJCfZMHyCwD5yRYsvwCQn3TB8gsA+cl3l/0TZ/dku4xLTuqR/72EMw4Lpf++oQnAzh87CfhxU0eBiR86CZDfBED+0EmA/AJAfkAAyJ82Bdj9BYD8oREgvwCQPzQC5BcA8odGgPyLBaD612QdLf+s+3HkwZ29Eh8pf4VvPTIB2PlNAnZ+ASB/dgTIf+UAvL48bx4D6sk/+z5UPL8/Q/5q4/+pvpoA7PxLTQJ2/vM4a1d/eHx6I58pqJJ4/9x5K1yDCQCYEB47/43fA7ALWnfVXXCm/B0/+ltuAkiLQNX1dpchcb1nBaDaJwGJEai+zpQIVF7nOZ4OclifCOSub5DEukiSu66zA1D5MWDVCHRdz2qydFjPuX7ukrnieYDP0fmcwEoh6/wxXaeQCcACIVj5vYxOIeg4wRwSgK4RqByDxPMMFWPQ+bFlz+N5ZACAFdkTAEeBgWB2B6DDpwGA3d8EAOAWATAFAH13fxMAYAKYVx8Ac/0zAQAmAFMAkLb7mwAAE0CdGgE41rdR8aIAHOOZRwDAI4ApAEjb/W82AYgA0MOr0eliAfI3CQCAwPcATAFAH49G54sHyN/gEUAEgJrejJUWA5C/aABEAKjnyVh5cQD5iwVABIA6XoykxQLkf08JCf3ICIg/h+EmALmv++FmALmv95LSeSQA8cMmANMAyG8CMA2A+AIgBCC+AAgBiC8AQgDiC4AYgPQCIAYgvQCIAUgvAMIAogMAAAAAAAAAAAAAAACI5m+0vrbYzqab/wAAAABJRU5ErkJggg==" alt="" aria-hidden="true" hidden>
+				<h1>ARROWFLOW</h1>
+				<p id="tagline">Clear a path. Find your flow.</p>
+				<progress id="status-progress" aria-label="Loading game"></progress>
+				<p id="status-label">Setting up the puzzle board…</p>
+				<p id="status-tip">Every puzzle has a clear way through.</p>
+				<p id="slow-notice" hidden>Taking a little longer? Your game is still loading.</p>
+				<div id="status-notice"></div>
+				<button id="retry" type="button">Try again</button>
+			</div>
+		</div>
+		<script src="$GODOT_URL"></script>
+		<!-- arrowflow:custom-loading-loop -->
+		<script>
+const GODOT_CONFIG = $GODOT_CONFIG;
+const GODOT_THREADS_ENABLED = $GODOT_THREADS_ENABLED;
+const engine = new Engine(GODOT_CONFIG);
+(function () {
+	const overlay = document.getElementById('status');
+	const progress = document.getElementById('status-progress');
+	const label = document.getElementById('status-label');
+	const notice = document.getElementById('status-notice');
+	const retry = document.getElementById('retry');
+	const slowNotice = document.getElementById('slow-notice');
+	let initializing = true;
+	let statusMode = '';
+	const slowTimer = window.setTimeout(() => {
+		if (initializing) {
+			slowNotice.hidden = false;
+			retry.style.display = 'inline-block';
+			retry.textContent = 'Retry';
+		}
+	}, 12000);
+	function setStatusMode(mode) {
+		if (statusMode === mode || !initializing) return;
+		if (mode === 'hidden') {
+			window.clearTimeout(slowTimer);
+			overlay.remove();
+			initializing = false;
+			return;
+		}
+		if (mode === 'progress') {
+			overlay.classList.remove('error');
+			progress.style.display = 'block';
+			label.style.display = 'block';
+			statusMode = mode;
+		}
+	}
+	function setStatusNotice(text) {
+		notice.replaceChildren();
+		const lines = String(text).split('\n');
+		lines.forEach((line, index) => {
+			if (index > 0) notice.appendChild(document.createElement('br'));
+			notice.appendChild(document.createTextNode(line));
+		});
+	}
+	function displayFailureNotice(error) {
+		console.error(error);
+		setStatusNotice(error instanceof Error ? error.message : (typeof error === 'string' ? error : 'An unknown error occurred.'));
+		overlay.classList.add('error');
+		retry.style.display = 'inline-block';
+		retry.textContent = 'Try again';
+		initializing = false;
+	}
+	retry.addEventListener('click', () => window.location.reload());
+	const missing = Engine.getMissingFeatures({ threads: GODOT_THREADS_ENABLED });
+	if (missing.length !== 0) {
+		displayFailureNotice('Arrowflow cannot start because this browser is missing required features:\n' + missing.join('\n'));
+	} else {
+		setStatusMode('progress');
+		engine.startGame({
+			onProgress: function (current, total) {
+				if (current > 0 && total > 0) {
+					progress.value = current;
+					progress.max = total;
+					label.textContent = 'Loading game data…';
+				} else {
+					progress.removeAttribute('value');
+					progress.removeAttribute('max');
+					label.textContent = 'Preparing your puzzle space…';
+				}
+			},
+		}).then(() => setStatusMode('hidden'), displayFailureNotice);
+	}
+}());
+		</script>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 2,
+  "title": "Arrowflow",
+  "description": "Tap arrows with clear lanes to send them off the grid. Solve 100 progressively challenging puzzles, build your score and stars, and return for a daily challenge.",
+  "defaultCaptions": {},
+  "assets": {
+    "og": "assets/share/og.png",
+    "favicon": "assets/share/favicon.png"
+  }
+}

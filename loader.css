@@ -1,0 +1,41 @@
+/* Arrowflow's self-contained Web loading screen: clean paper, bold arrows, and calm motion. */
+#status{position:fixed;inset:0;background:#f6f5ef}
+#status-splash,#status-progress,#status-notice{display:none!important}
+#arrowflow-loader{position:fixed;inset:0;z-index:20;isolation:isolate;display:grid;place-items:center;box-sizing:border-box;overflow:hidden;padding:max(18px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(18px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));background:radial-gradient(ellipse at 50% 36%,#fffef8 0%,#f6f5ef 62%,#e9eee7 100%);color:#172b3a;font:16px/1.45 "Noto Sans SC","Nunito",system-ui,sans-serif;touch-action:none}
+#arrowflow-loader[hidden]{display:none!important}
+#arrowflow-loader-card{width:min(100%,470px);display:flex;flex-direction:column;align-items:center;gap:14px;padding:clamp(24px,6vw,42px);border:1px solid rgba(23,43,58,.08);border-radius:30px;background:rgba(255,255,255,.74);box-shadow:0 22px 70px rgba(23,43,58,.09);text-align:center;pointer-events:none}
+#arrowflow-loader-arrows{display:flex;align-items:center;justify-content:center;gap:clamp(9px,3vw,16px);margin-bottom:5px}
+.arrowflow-loader-arrow{width:clamp(48px,13vw,66px);height:clamp(48px,13vw,66px);display:grid;place-items:center;border-radius:19px;color:#183247;font:900 clamp(30px,8vw,42px)/1 "Noto Sans SC","Nunito",system-ui,sans-serif;box-shadow:0 7px 18px rgba(23,43,58,.1);animation:arrowflow-arrow-float 1.45s ease-in-out infinite;animation-delay:var(--arrowflow-delay,0ms)}
+.arrowflow-loader-arrow::before{content:"";width:34%;height:58%;background:currentColor;clip-path:polygon(50% 0,100% 38%,70% 38%,70% 100%,30% 100%,30% 38%,0 38%)}
+.arrowflow-loader-arrow[data-arrowflow-direction="right"]::before{transform:rotate(90deg)}
+.arrowflow-loader-arrow[data-arrowflow-direction="down"]::before{transform:rotate(180deg)}
+.arrowflow-loader-arrow[data-arrowflow-direction="left"]::before{transform:rotate(270deg)}
+.arrowflow-loader-arrow:nth-child(1){background:#c8ef68;--arrowflow-delay:0ms}
+.arrowflow-loader-arrow:nth-child(2){background:#ff9b82;--arrowflow-delay:120ms}
+.arrowflow-loader-arrow:nth-child(3){background:#67c9e9;--arrowflow-delay:240ms}
+.arrowflow-loader-arrow:nth-child(4){background:#ffd36d;--arrowflow-delay:360ms}
+#arrowflow-loader-message{max-width:100%;margin:0;color:#172b3a;font-size:clamp(28px,8vw,40px);line-height:1.08;font-weight:900;letter-spacing:.035em}
+#arrowflow-loader-detail{max-width:34em;margin:0;color:#687783;font-size:14px;line-height:1.5}
+#arrowflow-loader-detail[hidden],#arrowflow-loader-retry[hidden]{display:none!important}
+#arrowflow-loader-progress{width:min(100%,300px);height:12px;margin:5px 0 0;overflow:hidden;border:0;border-radius:99px;background:#e7ece6;appearance:none}
+#arrowflow-loader-progress::-webkit-progress-bar{border-radius:99px;background:#e7ece6}
+#arrowflow-loader-progress::-webkit-progress-value{border-radius:99px;background:#c8ef68;transition:width .18s ease-out}
+#arrowflow-loader-progress::-moz-progress-bar{border-radius:99px;background:#c8ef68}
+#arrowflow-loader-retry{min-height:46px;margin-top:5px;padding:0 24px;border:0;border-radius:99px;background:#172b3a;color:#fff;font:inherit;font-weight:800;cursor:pointer;pointer-events:auto}
+#arrowflow-loader-retry:hover{background:#28495d}
+#arrowflow-loader-retry:focus-visible{outline:3px solid #f17961;outline-offset:4px}
+#arrowflow-loader[data-state="failure"] #arrowflow-loader-card{background:rgba(255,255,255,.94)}
+#arrowflow-loader[data-state="failure"] #arrowflow-loader-arrows{opacity:.52}
+#arrowflow-loader[data-state="failure"] #arrowflow-loader-message{font-size:clamp(26px,5vw,38px);animation:none}
+#arrowflow-loader[data-state="failure"] #arrowflow-loader-progress{display:none}
+#arrowflow-loader[data-state="fading"]{opacity:.98}
+@keyframes arrowflow-arrow-float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-7px) rotate(-3deg)}}
+#arrowflow-loader[data-state="downloading"] #arrowflow-loader-message,#arrowflow-loader[data-state="preparing"] #arrowflow-loader-message{animation:arrowflow-loading-breathe 2.1s ease-in-out infinite}
+@keyframes arrowflow-loading-breathe{0%,100%{opacity:1}50%{opacity:.74}}
+@media(max-width:420px){#arrowflow-loader-card{border-radius:24px;padding:24px 20px}.arrowflow-loader-arrow{border-radius:15px}}
+@media(max-height:420px){#arrowflow-loader-card{gap:8px;padding:16px}.arrowflow-loader-arrow{width:42px;height:42px}#arrowflow-loader-message{font-size:clamp(24px,8vh,34px)}}
+@media(prefers-reduced-motion:reduce){#arrowflow-loader .arrowflow-loader-arrow,#arrowflow-loader-message{animation:none!important}}
+/* The engine is ready underneath; fade only the outer status layer. */
+#status[data-arrowflow-fade="true"]{animation:arrowflow-loader-fade var(--arrowflow-fade-duration,320ms) ease-out both;pointer-events:auto}
+@keyframes arrowflow-loader-fade{from{opacity:1}to{opacity:0}}
+@media(prefers-reduced-motion:reduce){#status[data-arrowflow-fade="true"]{animation:none}}
